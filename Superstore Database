@@ -34,10 +34,10 @@ FROM superstore
 ORDER BY price desc;
 
 #Show a statistic about the item prices.
-SELECT avg(price)
+SELECT AVG(price)
 FROM superstore;
 
 #Show a statistic about the price for items in the category of "Kitchen Supplies". 
-SELECT avg(price)
+SELECT SUM(price)
 FROM superstore
-WHERE category="Kitchen Supplies"
+WHERE category="Kitchen Supplies";
